@@ -1,7 +1,10 @@
-import Navbar from "./Components/Navbar";
-import Hero from "./Components/Hero";
-import About from "./Components/About";
-import Skills from "./Components/Skills";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Experience from "./components/Experience";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -10,6 +13,9 @@ function App() {
       <Hero />
       <About />
       <Skills />
+      <Projects />
+      <Experience />
+      <Contact />
     </main>
   );
 }

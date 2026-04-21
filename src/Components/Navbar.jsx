@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import TazLogo from "./TazLogo";
 
 const links = [
   { label: "Home", href: "#home" },
@@ -34,14 +35,9 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-        <motion.a
-          href="#home"
-          className="text-white font-black text-xl tracking-tight"
-          style={{ fontFamily: "'Syne', sans-serif" }}
-          whileHover={{ scale: 1.05 }}
-        >
-          T<span className="text-sky-400">.</span>Seremu
-        </motion.a>
+        <a href="#home">
+          <TazLogo size={45} />
+        </a>
 
         {/* Desktop Links */}
         <ul className="hidden md:flex items-center gap-8">
